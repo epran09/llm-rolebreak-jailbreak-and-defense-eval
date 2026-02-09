@@ -1,0 +1,7 @@
+model,cohen_kappa_score
+microsoft-Phi-3-mini,0.8052980132450331
+falcon-7b-instruct,0.48851774530271397
+Mistral-7B-Instruct,0.9291784702549575
+Llama-2-7b,1.0
+falcon-11b,0.8466257668711656
+Llama-2-13b,1.0

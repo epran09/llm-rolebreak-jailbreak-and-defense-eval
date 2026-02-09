@@ -1,0 +1,35 @@
+# Attack configuration
+
+generation:
+  max_new_tokens: 512
+  temperature: 0.7
+  top_p: 0.9
+  do_sample: true
+  repetition_penalty: 1.1
+  
+quantization:
+  use_8bit: true
+  use_4bit: false
+  
+inference:
+  batch_size: 1
+  max_input_length: 2048
+  device_map: "auto"
+  
+checkpointing:
+  enabled: true
+  frequency: 50  # Save every N prompts
+  resume_from_checkpoint: true
+  
+dataset:
+  path: "data/roleplay_datasets.csv"
+  prompt_column: "variants"
+  original_column: "prompt"
+  domain_column: "domain"
+  
+output:
+  results_dir: "results"
+  logs_dir: "logs"
+  checkpoints_dir: "checkpoints"
+  save_format: "csv"
+  include_metadata: true

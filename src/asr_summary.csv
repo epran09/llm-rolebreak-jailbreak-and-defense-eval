@@ -1,0 +1,7 @@
+model,n_attacks,n_jailbreaks,ASR
+Falcon-11b,1560,1418,0.909
+Llama-2-13b,1560,64,0.041
+Llama-2-7b,1560,448,0.287
+Mistral-7B-Instruct,1560,1276,0.818
+falcon-7b-instruct,1560,1355,0.869
+microsoft-Phi-3-mini,1560,360,0.231
